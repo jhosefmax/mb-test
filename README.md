@@ -14,41 +14,48 @@ Make sure you have the following tools installed on your machine:
 ## Installation
 1. Clone the repository to your local machine:
 
+```bash
 git clone https://github.com/your-username/your-project.git
-
+```
 
 2. Install PHP dependencies using Composer:
 
+```bash
 composer install
-
+```
 
 3. Install JavaScript dependencies using NPM:
 
+```bash
 npm install
-
+```
 
 4. Copy the environment file `.env.example` and rename it to `.env`:
 
+```bash
 cp .env.example .env
-
+```
 
 
 5. Generate an application key:
 
+```bash
 php artisan key:generate
-
+```
 
 6. Configure environment variables in the `.env` file to fit your environment (e.g., database settings).
 
 7. Run database migrations to create the necessary tables:
 
+```bash
 php artisan migrate
-
+```
 
 8. Start the development server:
 
+```bash
 php artisan serve
-
+```
 
 9. Visit `http://localhost:8000` or `http://localhost:8001` (see at terminal the correct url) in your browser to see the project running.
 
