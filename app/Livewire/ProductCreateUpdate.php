@@ -97,5 +97,6 @@ class ProductCreateUpdate extends Component
         );
 
         $this->reset();
+        Redirect::route('products.view');
     }
 }
