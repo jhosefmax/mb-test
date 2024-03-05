@@ -51,19 +51,19 @@ php artisan key:generate
 php artisan migrate
 ```
 
-9. To Seed the database and include some data for tests, you need to execute the command to generate how many random records you want. When executing the command below it will ask for the number of records.
+8. To Seed the database and include some data for tests, you need to execute the command to generate how many random records you want. When executing the command below it will ask for the number of records.
 
 ```bash
 php artisan db:seed --class=ProductSeeder
 ```
 
-8. Start the development server:
+9. Start the development server:
 
 ```bash
 php artisan serve
 ```
 
-9. Visit `http://localhost:8000` or `http://localhost:8001` (see at terminal the correct url) in your browser to see the project running.
+10. Visit `http://localhost:8000` or `http://localhost:8001` (see at terminal the correct url) in your browser to see the project running.
 
 ## Usage
 Now that the project is running, you can start using it according to the instructions provided in the application.
