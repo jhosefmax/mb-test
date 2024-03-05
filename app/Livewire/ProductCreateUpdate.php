@@ -12,6 +12,21 @@ class ProductCreateUpdate extends Component
 {
     use WithPagination;
 
+    public function mount()
+    {
+        $routeId = Route::current()->parameter('id');
+        if($routeId != 'new')
+        {   
+            $this->selectedId = $routeId;
+            $this->edit($this->selectedId);
+        }
+    }
+    
+    public function render()
+    {
+        return view('livewire.product-create-update');
+    }
+
     public $id;
     public $name;
     public $description;
@@ -21,9 +36,6 @@ class ProductCreateUpdate extends Component
     public $category;
 
     public $selectedId;
-
-
-    
 
     protected $rules = [
         'name' => 'required',
@@ -86,26 +98,4 @@ class ProductCreateUpdate extends Component
 
         $this->reset();
     }
-
-    
-    public function mount()
-    {
-        $routeId = Route::current()->parameter('id');
-        if($routeId != 'new')
-        {   
-            $this->selectedId = $routeId;
-            $this->edit($this->selectedId);
-        }
-    }
-    
-    
-    public function render()
-    {
-       
-        
-        return view('livewire.product-create-update');
-    }
-
-    
-    
 }

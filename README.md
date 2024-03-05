@@ -1,3 +1,75 @@
+# MB Test Project
+
+## Description
+This is a developer test.
+
+## Prerequisites
+Make sure you have the following tools installed on your machine:
+- PHP
+- Composer
+- Node.js
+- NPM or Yarn
+- Database (MySQL, SQLite, etc.)
+
+## Installation
+1. Clone the repository to your local machine:
+
+git clone https://github.com/your-username/your-project.git
+
+
+2. Install PHP dependencies using Composer:
+
+composer install
+
+
+3. Install JavaScript dependencies using NPM:
+
+npm install
+
+
+4. Copy the environment file `.env.example` and rename it to `.env`:
+
+cp .env.example .env
+
+
+
+5. Generate an application key:
+
+php artisan key:generate
+
+
+6. Configure environment variables in the `.env` file to fit your environment (e.g., database settings).
+
+7. Run database migrations to create the necessary tables:
+
+php artisan migrate
+
+
+8. Start the development server:
+
+php artisan serve
+
+
+9. Visit `http://localhost:8000` or `http://localhost:8001` (see at terminal the correct url) in your browser to see the project running.
+
+## Usage
+Now that the project is running, you can start using it according to the instructions provided in the application.
+
+
+## Login/Register
+You first need to register a new user by clicking in `Register`. After that you'll be able to access the logged in page.
+
+## Dashboard
+There is a Dashboard page where you'll find some graphics
+
+## Products
+In the Products page you can register new products, search/filter results, edit and remove records.
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
