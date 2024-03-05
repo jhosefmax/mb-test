@@ -13,10 +13,8 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        // Defina a quantidade de registros que você deseja criar (padrão: 10)
-        $count = $this->command->ask('How much records? (default:10)', 10);
+        $count = $this->command->ask('How much records?', 10);
 
-        // Use a factory para criar os registros
         Product::factory()->count($count)->create();
     }
 }

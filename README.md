@@ -51,6 +51,12 @@ php artisan key:generate
 php artisan migrate
 ```
 
+9. To Seed the database and include some data for tests, you need to execute the command to generate how many random records you want. When executing the command below it will ask for the number of records.
+
+```bash
+php artisan db:seed --class=ProductSeeder
+```
+
 8. Start the development server:
 
 ```bash
