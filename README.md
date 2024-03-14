@@ -15,7 +15,7 @@ Make sure you have the following tools installed on your machine:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-project.git
+git clone https://github.com/jhosefmax/mb-test.git
 ```
 
 2. Install PHP dependencies using Composer:
