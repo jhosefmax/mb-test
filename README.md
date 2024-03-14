@@ -8,7 +8,7 @@ Make sure you have the following tools installed on your machine:
 - PHP
 - Composer
 - Node.js
-- NPM or Yarn
+- NPM
 - Database (MySQL, SQLite, etc.)
 
 ## Installation
